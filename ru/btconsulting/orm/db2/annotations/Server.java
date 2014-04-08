@@ -8,10 +8,9 @@ import java.lang.annotation.Target;
 /**
  * Created by apple on 08.04.14.
  */
-
-
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Database {
-    String name() default "";
+public @interface Server {
+    String server();
+    int port() default 50000;
 }
